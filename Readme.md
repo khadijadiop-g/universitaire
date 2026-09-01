@@ -11,5 +11,12 @@ précis pour marquer une version stable/release
 c'est la version de référence servant de base
 aux autres branches et souvent liée au déploiement/à l'évaluation — un main cassé impacte tout le monde.
 
+## 4 Pourquoi placer index.php dans un dossier public ?
+
+
+Pourquoi placer index.php dans un dossier public ?
+Pourquoi toutes les requêtes devraient-elles passer par ce fichier ?
+Quels éléments ne devraient jamais se trouver dans le dossier public ?
+Comment avez-vous réparti les responsabilités entre vos dossiers ?
 
 

@@ -1,4 +1,5 @@
 <?php
+namespace App\Entity;
 abstract class AbstractDocument
 {
     protected function __construct( private \DateTime $dateDepot,private ?int $id=null)

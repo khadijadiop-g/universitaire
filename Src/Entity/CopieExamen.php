@@ -1,22 +1,17 @@
 <?php
-
+namespace App\Entity;
+use App\Entity\AbstractDocument;
 class CopieExamen extends AbstractDocument
 {
-    private int $noteBrute;
     private ?int $noteFinale;
-    private bool $penaliteAppliquee;
-    private \DateTime $dateLimite;
-
     public function __construct(
-        ?int $id,
-        \DateTime $dateDepot,
-        int $noteBrute,
-        ?int $noteFinale,
-        bool $penaliteAppliquee,
-        \DateTime $dateLimite
+    private int $noteBrute,
+    private bool $penaliteAppliquee,
+    private \DateTime $dateLimite,
+    \DateTime $dateDepot,
+    ?int $id=null
     ) {
         parent::__construct($dateDepot,$id);
-
         $this->noteBrute = $this->validateNote($noteBrute);
     }
 
